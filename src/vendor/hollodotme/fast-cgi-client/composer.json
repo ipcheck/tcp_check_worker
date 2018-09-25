@@ -1,0 +1,57 @@
+{
+	"name": "hollodotme/fast-cgi-client",
+	"description": "A PHP fast CGI client to send requests (a)synchronously to PHP-FPM.",
+	"keywords": [
+		"fastcgi",
+		"php-fpm",
+		"socket"
+	],
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Holger Woltersdorf",
+			"email": "hw@hollo.me"
+		}
+	],
+	"bin": [
+		"bin/fcgiget"
+	],
+	"autoload": {
+		"psr-4": {
+			"hollodotme\\FastCGI\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"hollodotme\\FastCGI\\Tests\\": "tests/"
+		}
+	},
+	"require": {
+		"php": ">=7.1"
+	},
+	"require-dev": {
+		"tm/tooly-composer-script": "^1.0"
+	},
+	"scripts": {
+		"post-install-cmd": "Tooly\\ScriptHandler::installPharTools",
+		"post-update-cmd": "Tooly\\ScriptHandler::installPharTools"
+	},
+	"extra": {
+		"tools": {
+			"phpunit": {
+        "url": "https://phar.phpunit.de/phpunit-6.4.4.phar",
+				"only-dev": true
+			},
+			"coveralls": {
+				"url": "https://github.com/satooshi/php-coveralls/releases/download/v1.0.1/coveralls.phar",
+				"only-dev": true
+			},
+			"phpmetrics": {
+        "url": "https://github.com/phpmetrics/PhpMetrics/releases/download/v2.3.2/phpmetrics.phar",
+				"only-dev": true
+			}
+		}
+	}
+}

@@ -1,0 +1,99 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "d498d68da953c0763bf4c7e8c841d038",
+    "packages": [],
+    "packages-dev": [
+        {
+            "name": "tm/tooly-composer-script",
+            "version": "1.2.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tommy-muehle/tooly-composer-script.git",
+                "reference": "d75cf732edc3a807df47b0c16cb34ca993b420c8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tommy-muehle/tooly-composer-script/zipball/d75cf732edc3a807df47b0c16cb34ca993b420c8",
+                "reference": "d75cf732edc3a807df47b0c16cb34ca993b420c8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "composer/composer": "1.*",
+                "mikey179/vfsstream": "1.6.*",
+                "php-mock/php-mock-phpunit": "1.1.*",
+                "tm/gpg-verifier": "1.*"
+            },
+            "suggest": {
+                "tm/gpg-verifier": "Allows verification over GPG for PHAR tools."
+            },
+            "type": "library",
+            "extra": {
+                "tools": {
+                    "phpunit": {
+                        "url": "https://phar.phpunit.de/phpunit-5.5.0.phar"
+                    },
+                    "phpcpd": {
+                        "url": "https://phar.phpunit.de/phpcpd-2.0.4.phar"
+                    },
+                    "phpcs": {
+                        "url": "https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar",
+                        "force-replace": true
+                    },
+                    "phpmd": {
+                        "url": "http://static.phpmd.org/php/latest/phpmd.phar",
+                        "force-replace": true
+                    },
+                    "security-checker": {
+                        "url": "http://get.sensiolabs.org/security-checker.phar",
+                        "force-replace": true
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tooly\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tommy Muehle",
+                    "email": "tommy.muehle@gmail.com",
+                    "homepage": "https://tommy-muehle.de"
+                }
+            ],
+            "description": "Simple composer script to manage phar files.",
+            "homepage": "https://github.com/tommy-muehle/tooly-composer-script",
+            "keywords": [
+                "composer",
+                "composer-phar",
+                "composer-script",
+                "gpg-verification",
+                "phar",
+                "phar-handling",
+                "phar-management"
+            ],
+            "time": "2017-07-21T20:16:48+00:00"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=7.1"
+    },
+    "platform-dev": []
+}

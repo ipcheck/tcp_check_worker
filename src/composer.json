@@ -1,0 +1,7 @@
+{
+    "require": {
+        "php-amqplib/php-amqplib": "^2.7",
+        "monolog/monolog": "^1.23",
+        "hollodotme/fast-cgi-client": "^2.4"
+    }
+}
